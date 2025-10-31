@@ -1,17 +1,17 @@
 :root {
   /* Colours */
-  --color-bg: #cfceca; /* page background /*
+  --color-bg: #fceb94; /* page background /*
 
   /* Header */
-  --color-head-bg: #625e5c;
+  --color-head-bg: #ff4b00;
 
   /* Logotype */
-  --color-logotype-bg: #2a2828;
-  --color-text-logotype: #c1bfb8;
-  --font-logotype-size: 1rem;
+  --color-logotype-bg: #000000;
+  --color-text-logotype: #fffae2;
+  --font-logotype-size: 2rem;
 
   /* Global menu */
-  --color-menu-bg: #5a5b5e;
+  --color-menu-bg: #6f90eb;
   /* Links */
   --color-link-bg: #78766e;
   --color-link-hover: #fff; /* used */
@@ -19,43 +19,43 @@
   --border-radius-links: 1px;
 
   /* Headlines og rubrik */
-  --font-h1-size: 1rem;
-  --font-sub1-size: 1rem;
+  --font-h1-size: 2rem;
+  --font-sub1-size: 2rem;
   --font-h2-size: 1rem;
   --font-h3-size: 1rem;
-  --color-headline-bg: #4b4545;
-  --color-headline-text-page: #42413d;
+  --color-headline-bg: #000000;
+  --color-headline-text-page: #fffae2;
 
   /* Tekst */
   --color-text: #000;
-  --color-text-inverted: #cdccc4;
+  --color-text-inverted: #fffae2;
 
   /*  Marginer */
   --margin-head-bottom: 5px;
 
   /* Borders */
-  --border-radius: 5px;
+  --border-radius: 10px;
 
   /* Cards */
-  --color-card-bg: #8a8585;
-  --color-cta-card-bg: #d5d2d0;
+  --color-card-bg: #ffffff;
+  --color-cta-card-bg: #ff4b00;
   /* news-cards */
-  --color-news-bg: #dbdad4;
-  --color-news-bg-inverted: #585a5e;
-  --color-cta-newscard-bg: #787473;
-  --color-cta-newscard-bg-inverted: #7b7d83;
+  --color-news-bg: #fffae2;
+  --color-news-bg-inverted: #dbe2f5;
+  --color-cta-newscard-bg: #ffa680;
+  --color-cta-newscard-bg-inverted: #6f90eb;
 
   /* Fonts */
-  --font-family-sans: ui-sans-serif;
-  /* --font-weight-light: 300;
+  --font-family-sans: "rubik", ui-sans-serif;
+  --font-weight-light: 300;
   --font-weight-regular: 400;
   --font-weight-medium: 500;
-  --font-weight-bold: 700; */
+  --font-weight-bold: 700;
 
   /* Text sizes */
   --logotype-size: 1rem;
   --headline1-size: 2rem;
-  --headline2-size: 1rem;
+  --headline2-size: 1.5rem;
   --headline3-size: 1rem;
   --bodytext-size: 1rem;
   --cta-text-size: 1rem;
