@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="css/layout.css" />
     <link rel="stylesheet" href="css/burger.css" />
     <link rel="stylesheet" href="css/cards.css" />
-    <link rel="stylesheet" href="css/form.css" />
+    <link rel="stylesheet" href="css/forms.css" />
     <link rel="icon" type="image/png" href="img/fav.png" />
     <title>Emergency Site</title>
   </head>
@@ -48,6 +48,104 @@
           <p class="placeholder">Opsummering</p>
         </article>
       </section>
+      <form>
+        <fieldset>
+          <legend>Personlige oplysninger</legend>
+          <div class="form-row">
+            <div class="form-field">
+              <label for="Navn"> Navn: </label>
+              <input type="text" id="Navn" name="Navn" required />
+            </div>
+            <div class="form-field">
+              <label for="Efternavn"> Efternavn: </label>
+              <input type="text" id="Efternavn" name="Efternavn" required />
+            </div>
+
+            <div class="form-field">
+              <label for="Email">Email:</label>
+              <input type="email" id="Email" name="Email" required />
+            </div>
+            <div class="form-field">
+              <label for="Tlf">Telefonnummer:</label>
+              <input type="tel" id="Tlf" name="Tlf" required />
+            </div>
+          </div>
+        </fieldset>
+        <div class="Dato-style">
+          <label for="dato">Dato for sightingen</label>
+          <input type="date" id="dato" name="dato" required />
+        </div>
+
+        <fieldset class="bydel-grid">
+          <legend>Bydel hvor sightingen fandt sted:</legend>
+          <div class="bydel-options">
+            <input
+              type="radio"
+              id="amager-vest"
+              name="bydel"
+              value="amager-vest"
+              required
+            />
+            <label for="amager-vest">Amager Vest</label>
+
+            <input
+              type="radio"
+              id="amager-ost"
+              name="bydel"
+              value="amager-ost"
+            />
+            <label for="amager-ost">Amager Øst</label>
+
+            <input
+              type="radio"
+              id="bispebjerg"
+              name="bydel"
+              value="bispebjerg"
+            />
+            <label for="bispebjerg">Bispebjerg</label>
+
+            <input
+              type="radio"
+              id="bronshoj-husum"
+              name="bydel"
+              value="bronshoj-husum"
+            />
+            <label for="bronshoj-husum">Brønshøj-husum</label>
+
+            <input type="radio" id="indre-by" name="bydel" value="indre-by" />
+            <label for="indre-by">Indre by inkl Christianshavn</label>
+
+            <input type="radio" id="norrebro" name="bydel" value="norrebro" />
+            <label for="norrebro">Nørrebro</label>
+
+            <input type="radio" id="valby" name="bydel" value="valby" />
+            <label for="valby">Valby</label>
+
+            <input type="radio" id="vanlose" name="bydel" value="vanlose" />
+            <label for="vanlose">Vanløse</label>
+
+            <input type="radio" id="vesterbro" name="bydel" value="vesterbro" />
+            <label for="vesterbro">Vesterbro</label>
+
+            <input type="radio" id="osterbro" name="bydel" value="osterbro" />
+            <label for="osterbro">Østerbro</label>
+          </div>
+
+          <div class="adresse-layout">
+            <label for="Adresse"
+              >Specifik lokation for sightingen (adresse, gade, butik,
+              osv.)</label
+            >
+            <input type="text" id="Adresse" name="Adresse" />
+          </div>
+        </fieldset>
+        <div class="textarea-style">
+          <label for="Beskrivelse">Beskrivelse af sightingen</label>
+          <textarea id="Beskrivelse" name="Beskrivelse" required></textarea>
+        </div>
+
+        <button type="submit">Indsend sightingen</button>
+      </form>
     </main>
     <footer>
       <nav class="some">
