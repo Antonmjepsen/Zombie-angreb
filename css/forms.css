@@ -2,6 +2,131 @@
   background-color: var(--form-background-color);
 }
 
+/* Radio button styling - labels to the right */
+input[type="radio"] + label {
+  display: inline;
+  margin-left: 8px;
+  margin-right: 20px;
+}
+
+input[type="radio"] {
+  display: inline;
+  margin-right: 0;
+}
+
+fieldset {
+  border: solid 2px black;
+  padding: 16px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+fieldset legend {
+  font-weight: bold;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+/* Two-column layout for district radios */
+.bydel-options {
+  display: grid;
+  grid-template-columns: auto 1fr auto 1fr;
+  column-gap: 12px;
+  row-gap: 10px;
+  align-items: center;
+}
+
+.bydel-options input[type="radio"] + label {
+  display: inline;
+  margin-left: 4px;
+}
+
+@media (max-width: 640px) {
+  .bydel-grid {
+    grid-template-columns: auto 1fr;
+  }
+}
+
+.adresse-layout {
+  display: grid;
+  margin-top: 20px;
+}
+
+.adresse-layout label {
+  display: grid;
+}
+
+.adresse-layout input {
+  margin-top: 8px;
+  padding: 8px 12px;
+  border: 3px solid (black);
+  border-radius: 4px;
+  background-color: white;
+}
+
+/* Form row styling */
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.form-field label {
+  display: block;
+  font-weight: 500;
+}
+
+.form-field input {
+  width: 100%;
+  padding: 8px 12px;
+  border: 3px solid var(black);
+  border-radius: 4px;
+  background-color: white;
+}
+/* form row styling end */
+
+/* dato*/
+.Dato-style {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 16px;
+}
+
+.Dato-style input {
+  padding: 8px 12px;
+  border: 3px solid var(black);
+  border-radius: 4px;
+  background-color: white;
+}
+/*dato end*/
+
+/*textarea*/
+.textarea-style {
+  display: grid;
+}
+
+.textarea-style textarea {
+  background-color: white;
+  border: solid 3px (black);
+  border-radius: 4px;
+  padding: 5px 5px;
+}
+/*textarea end*/
+
+/* submit button styling*/
+button[type="submit"] {
+  background-color: rgb(0, 198, 0);
+  color: white;
+  font-size: 1rem;
+  font-weight: medium;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 40px;
+}
+
 #form-section,
 #form-summary {
   background-color: var(--info-background-color);
