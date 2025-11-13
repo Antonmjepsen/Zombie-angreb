@@ -80,9 +80,7 @@
   width: max-content;
   border-radius: var(--border-radius);
 }
-.news_card .cta_btn {
-  background-color: var(--color-cta-newscard-bg);
-}
+
 .news_card:nth-of-type(2n) .cta_btn {
   background-color: var(--color-cta-newscard-bg-inverted);
   color: var(--color-text);

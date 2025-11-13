@@ -1,7 +1,7 @@
 html {
   font-family: var(--font-family-sans);
   color: var(--color-text);
-  background-color: var(--color-bg);
+  background-color: rgb(243, 218, 26);
 }
 
 header {
@@ -10,7 +10,7 @@ header {
 
 #main-disclamer {
   height: 225px;
-  background-color: var(--color-head-bg);
+  background-color: rgb(255, 6, 6);
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -67,12 +67,12 @@ h3 {
   font-size: var(--headline3-size);
 }
 
-main>h1 {
+main > h1 {
   width: calc(80% - 6rem);
 }
 
 /* NAVIGATION STRUCTURES */
-header>nav {
+header > nav {
   height: 100%;
   background-color: var(--color-menu-bg);
 }
@@ -92,19 +92,31 @@ nav a {
 
 /* Måske skal du lave en ny regel for logotype-wrapper, når du har lavet din logotype */
 #logotype-wrapper {
-  background-color: var(--color-logotype-bg);
+  background-color: #287cbb;
   display: flex;
   justify-content: flex-start;
   align-items: center;
   height: 3.6rem;
 }
 
-#logotype-wrapper>a {
+#logotype-wrapper > a {
   color: var(--color-text-logotype);
   font-size: var(--font-logotype-size);
   font-weight: var(--font-weight-medium);
   width: max-content;
   margin-left: 1rem;
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+#logotype-wrapper img {
+  height: 3rem; /* Fits within 3.6rem wrapper */
+  width: auto;
+  display: block;
+}
+#logotype-wrapper > a:hover {
+  background-color: #287cbb; /* Same as wrapper */
 }
 
 /* Global menu */
@@ -118,7 +130,7 @@ header nav li a {
 }
 
 /* Pilen efter menu-tekst */
-header>nav li>a:after {
+header > nav li > a:after {
   content: " \2192";
 }
 
