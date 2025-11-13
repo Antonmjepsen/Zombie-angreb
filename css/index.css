@@ -1,0 +1,42 @@
+/*newscards*/
+.newscard button {
+  border: none;
+}
+
+[popover]::backdrop {
+  backdrop-filter: blur(8px);
+}
+
+[popover] {
+  max-height: 90vh;
+  max-width: 50ch;
+  width: 90vw;
+  margin: 0 auto;
+  padding: 20px;
+}
+/*newscards end*/
+
+/*accordian menu styles*/
+
+#main-disclamer-content {
+  display: grid;
+  grid-template-columns: 163px 1fr;
+  align-items: center;
+  gap: 20px;
+  max-width: 1200px; /* Adjust to your needs */
+  padding: 20px;
+}
+
+#main-disclamer-content img {
+  max-width: 163px; /* Adjust this value to your preferred size */
+  width: 100%;
+  height: auto; /* Maintain aspect ratio */
+}
+
+#main-disclamer-content > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  margin-left: 15px; /* Add specific left margin for text */
+}

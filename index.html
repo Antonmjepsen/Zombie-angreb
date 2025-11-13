@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="css/layout.css" />
     <link rel="stylesheet" href="css/burger.css" />
     <link rel="stylesheet" href="css/cards.css" />
+    <link rel="stylesheet" href="css/index.css" />
     <link rel="icon" type="image/png" href="img/fav.png" />
     <title>Emergency Site</title>
   </head>
@@ -18,7 +19,9 @@
     <header>
       <nav>
         <div id="logotype-wrapper" class="logo">
-          <a href="index.html"> LOGO-TYPE </a>
+          <a href="index.html">
+            <img src="Logotype-iau.svg" alt="logotype" />
+          </a>
         </div>
         <ul class="menu">
           <li><a class="menuItem" href="instruction.html">Nærkontakt </a></li>
@@ -33,10 +36,12 @@
     </header>
     <section id="main-disclamer">
       <div id="main-disclamer-content">
-        <img src="warning" alt="ICON" />
+        <img src="Emblem3.svg" alt="ICON" />
         <div>
-          <h1>OVERSKRIFT</h1>
-          <p class="sub">Underrubrik</p>
+          <h1>Aktuel nødsituation i København</h1>
+          <p class="sub">
+            Få de seneste opdateringer, advarsler og officiele meddelelser
+          </p>
         </div>
       </div>
     </section>
@@ -50,7 +55,17 @@
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
               magnam ducimus ea, sed minima asperiores.
             </p>
-            <a href="" class="cta_btn">Se mere</a>
+            <details name="moreInfo">
+              <summary class="cta_btn">Se mere</summary>
+              <div class="content">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit
+                  distinctio asperiores a! Modi reiciendis ab qui architecto
+                  debitis rerum iste, voluptatem voluptas totam sequi cumque
+                  nostrum a, nemo aliquam. Quisquam.
+                </p>
+              </div>
+            </details>
           </div>
         </article>
         <article class="daily_card">
@@ -61,28 +76,64 @@
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
               magnam ducimus ea, sed minima asperiores.
             </p>
-            <a href="" class="cta_btn">Se mere</a>
+            <details>
+              <summary class="cta_btn">Se mere</summary>
+              <div class="content">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit
+                  distinctio asperiores a! Modi reiciendis ab qui architecto
+                  debitis rerum iste, voluptatem voluptas totam sequi cumque
+                  nostrum a, nemo aliquam. Quisquam.
+                </p>
+              </div>
+            </details>
           </div>
         </article>
       </section>
+
       <section id="breaking">
         <article class="news_card">
           <h3>Nyhed</h3>
           <p>Lorem ipsum dolor sit, sed minima asperiores.</p>
           <img src="" alt="news_img" />
-          <a class="cta_btn" href="">Læs mere</a>
+          <button class="cta_btn" popovertarget="pop1">Læs mere</button>
+          <div popover id="pop1">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit
+              dolorem blanditiis placeat, sapiente maxime molestiae eveniet
+              voluptatum quaerat expedita soluta sunt molestias, architecto
+              facere officiis aliquam rem quis excepturi nulla!
+            </p>
+          </div>
+        </article>
+
+        <article class="news_card">
+          <h3>Nyhed</h3>
+          <p>Lorem ipsum dolor sit, sed minima asperiores.</p>
+          <img src="" alt="news_img" />
+          <button class="cta_btn" popovertarget="pop2">Læs mere</button>
+          <div popover id="pop2">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit
+              dolorem blanditiis placeat, sapiente maxime molestiae eveniet
+              voluptatum quaerat expedita soluta sunt molestias, architecto
+              facere officiis aliquam rem quis excepturi nulla!
+            </p>
+          </div>
         </article>
         <article class="news_card">
           <h3>Nyhed</h3>
           <p>Lorem ipsum dolor sit, sed minima asperiores.</p>
           <img src="" alt="news_img" />
-          <a class="cta_btn" href="">Læs mere</a>
-        </article>
-        <article class="news_card">
-          <h3>Nyhed</h3>
-          <p>Lorem ipsum dolor sit, sed minima asperiores.</p>
-          <img src="" alt="news_img" />
-          <a class="cta_btn" href="">Læs mere</a>
+          <button class="cta_btn" popovertarget="pop3">Læs mere</button>
+          <div popover id="pop3">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit
+              dolorem blanditiis placeat, sapiente maxime molestiae eveniet
+              voluptatum quaerat expedita soluta sunt molestias, architecto
+              facere officiis aliquam rem quis excepturi nulla!
+            </p>
+          </div>
         </article>
       </section>
     </main>
