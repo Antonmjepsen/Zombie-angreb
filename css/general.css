@@ -1,16 +1,19 @@
 html {
+  color-scheme: light;
   font-family: var(--font-family-sans);
   color: var(--color-text);
-  background-color: rgb(243, 218, 26);
+  background-color: var(--color-bg);
 }
-
+html.dark {
+  color-scheme: dark;
+}
 header {
   height: min-content;
 }
 
 #main-disclamer {
   height: 225px;
-  background-color: rgb(255, 6, 6);
+  background-color: rgb(97, 97, 173);
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -146,4 +149,67 @@ nav a:active {
 /* FOOTER */
 footer a {
   font-size: 0.7rem;
+}
+
+/*dark mode toggle switch*/
+.darkmode input[type="checkbox"] {
+  display: none;
+}
+
+.darkmode {
+  position: relative;
+  display: inline-block;
+  width: 70px;
+  height: 34px;
+  margin: 0 1.5rem;
+}
+
+.darkmode label {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ddd;
+  transition: 0.4s;
+  border-radius: 34px;
+  display: flex;
+  align-items: center;
+  padding: 0 6px;
+}
+
+.darkmode label:after {
+  content: "☀️";
+  position: absolute;
+  font-size: 18px;
+  left: 8px;
+  transition: 0.4s;
+}
+
+.darkmode label:before {
+  content: "";
+  position: absolute;
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  transition: 0.4s;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.darkmode input:checked + label {
+  background-color: #333;
+}
+
+.darkmode input:checked + label:after {
+  content: "🌙";
+  left: auto;
+  right: 8px;
+}
+
+.darkmode input:checked + label:before {
+  transform: translateX(36px);
 }

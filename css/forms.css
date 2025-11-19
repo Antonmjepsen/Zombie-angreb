@@ -1,32 +1,69 @@
+:root {
+  /* Form colors */
+  --form-text-color: light-dark(#000, #fff);
+  --form-border-color: light-dark(#000, #fff);
+  --form-input-bg: light-dark(#fff, #2d2d2d);
+  --form-label-color: light-dark(#000, #fff);
+}
+
 #webform {
   background-color: var(--form-background-color);
-}
-
-/* Radio button styling - labels to the right */
-input[type="radio"] + label {
-  display: inline;
-  margin-left: 8px;
-  margin-right: 20px;
-}
-
-input[type="radio"] {
-  display: inline;
-  margin-right: 0;
+  color: var(--form-text-color);
 }
 
 fieldset {
-  border: solid 2px black;
+  border: solid 2px var(--form-border-color);
   padding: 16px;
   border-radius: 8px;
   margin-bottom: 20px;
+  color: var(--form-text-color);
 }
 
 fieldset legend {
   font-weight: bold;
   margin-bottom: 20px;
   margin-top: 20px;
+  color: var(--form-text-color);
 }
 
+/* Labels */
+.form-field label,
+.adresse-layout label,
+.Dato-style label,
+.textarea-style label,
+label {
+  color: var(--form-label-color);
+}
+
+/* Inputs */
+.form-field input,
+.adresse-layout input,
+.Dato-style input {
+  border: 3px solid var(--form-border-color);
+  background-color: var(--form-input-bg);
+  color: var(--form-text-color);
+}
+
+.textarea-style textarea {
+  background-color: var(--form-input-bg);
+  border: solid 3px var(--form-border-color);
+  color: var(--form-text-color);
+}
+
+/* Form summary */
+#form-summary {
+  color: var(--form-text-color);
+}
+#form-info h2,
+#form-info p {
+  color: var(--form-text-color);
+}
+
+/* Also target any article inside form-section */
+#form-section article h2,
+#form-section article p {
+  color: var(--form-text-color);
+}
 /* Two-column layout for district radios */
 .bydel-options {
   display: grid;

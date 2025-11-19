@@ -1,17 +1,17 @@
 :root {
   /* Colours */
-  --color-bg: #fceb94; /* page background /*
+  --color-bg: light-dark(#2d5391, #353535); /* page background /*
 
   /* Header */
   --color-head-bg: #ff4b00;
 
   /* Logotype */
-  --color-logotype-bg: #000000;
+  --color-logotype-bg: light-dark(#000000, #fff);
   --color-text-logotype: #fffae2;
   --font-logotype-size: 2rem;
 
   /* Global menu */
-  --color-menu-bg: #6f90eb;
+  --color-menu-bg: light-dark(#6f90eb, #353535);
   /* Links */
   --color-link-bg: #78766e;
   --color-link-hover: #fff; /* used */
@@ -37,13 +37,13 @@
   --border-radius: 10px;
 
   /* Cards */
-  --color-card-bg: #ffffff;
-  --color-cta-card-bg: #ff4b00;
+  --color-card-bg: light-dark(#ffffff, #8d8d8d);
+  --color-cta-card-bg: light-dark(#ff4b00, #d1a0a0);
   /* news-cards */
-  --color-news-bg: #fffae2;
-  --color-news-bg-inverted: #dbe2f5;
+  --color-news-bg: light-dark(#fffae2, #8d8d8d);
+  --color-news-bg-inverted: light-dark(#dbe2f5, #b5b5b5);
   --color-cta-newscard-bg: #ffa680;
-  --color-cta-newscard-bg-inverted: #6f90eb;
+  --color-cta-newscard-bg-inverted: light-dark(#6f90eb, #d1a0a0);
 
   /* Fonts */
   --font-family-sans: "rubik", ui-sans-serif;
@@ -66,4 +66,8 @@
   --color-info-bg: #676161;
   --color-infobox-1-bg: #cfcec6;
   --color-infobox-2-bg: #969995;
+}
+
+html.dark {
+  color-scheme: dark;
 }
