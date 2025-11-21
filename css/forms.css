@@ -1,9 +1,9 @@
 :root {
   /* Form colors */
-  --form-text-color: light-dark(#000, #fff);
-  --form-border-color: light-dark(#000, #fff);
-  --form-input-bg: light-dark(#fff, #2d2d2d);
-  --form-label-color: light-dark(#000, #fff);
+  --form-text-color: rgb(0, 0, 0);
+  --form-border-color: white;
+  --form-input-bg: transparent;
+  --form-label-color: white;
 }
 
 #webform {
@@ -210,4 +210,9 @@ button[type="submit"]:hover {
 .error-message::before {
   content: "* ";
   margin-right: 4px;
+}
+
+.indberet-margin {
+  margin-top: 0;
+  margin-bottom: 40px;
 }
