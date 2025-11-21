@@ -35,7 +35,7 @@ main section {
 h1 {
   font-size: var(--font-h1-size);
   font-weight: var(--font-weight-bold);
-  color: var(--color-text-inverted);
+  color: black;
   margin: 5px 0;
   line-height: 1.3rem;
   text-align: left;
@@ -45,7 +45,7 @@ h1 {
 #register h1 {
   margin: 40px 0 20px 0;
   padding: 15px 30px;
-  background-color: var(--color-head-bg);
+  background-color: yellow;
   font-size: var(--font-h2-size);
 }
 
@@ -212,4 +212,82 @@ footer a {
 
 .darkmode input:checked + label:before {
   transform: translateX(36px);
+}
+
+/*dark mode toggle switch end*/
+
+/* Info-graphic knapper */
+.info-graphic button {
+  background-color: yellow;
+  color: black;
+  border: none;
+  padding: 12px 24px;
+  font-size: 1rem;
+  font-weight: var(--font-weight-medium);
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: var(--font-family-sans);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.info-graphic button:hover {
+  background-color: var(--color-cta-newscard-bg);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.info-graphic button:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.info-graphic button.active {
+  background-color: var(--color-menu-bg);
+  box-shadow: 0 0 0 3px rgba(111, 144, 235, 0.3);
+}
+/* Dark mode adjustments for instruction and register pages */
+
+/* Headings on instruction and register pages */
+#instruction h1,
+#register h1 {
+  background-color: light-dark(yellow, #6b6a6a);
+  color: light-dark(black, white);
+}
+
+/* Main disclaimer section */
+#main-disclamer {
+  background-color: light-dark(rgb(97, 97, 173), #2d2d5c);
+}
+
+/* Paragraph text on instruction page */
+#instruction p {
+  color: light-dark(black, white);
+}
+
+/* Info-graphic buttons dark mode */
+.info-graphic button {
+  background-color: light-dark(yellow, #ffa500);
+  color: light-dark(black, white);
+}
+
+.info-graphic button:hover {
+  background-color: light-dark(var(--color-cta-newscard-bg), #ff8c00);
+}
+
+.info-graphic button.active {
+  background-color: light-dark(var(--color-menu-bg), #5a7bc9);
+  color: white;
+}
+
+.info-graphic {
+  background-color: light-dark(#2790f9, #1a5276);
+}
+.info-text {
+  background-color: light-dark(#2790f9, #2d2d2d);
+}
+
+.info-text h2,
+.info-text p {
+  color: light-dark(black, white);
 }

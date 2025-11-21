@@ -3,7 +3,6 @@
 }
 .info-graphic,
 .info-text {
-  background-color: var(--color-info-bg);
   padding: 20px 0;
 }
 .info-graphic {
@@ -35,8 +34,37 @@
 }
 .info-box {
   padding: 1.5rem 1rem 0.5rem 1rem;
-  background-color: var(--color-infobox-1-bg);
+  background-color: yellow;
+  border: solid 2px black;
 }
 .info-box:nth-of-type(2n) {
-  background-color: var(--color-infobox-2-bg);
+  background-color: yellow;
+}
+
+/* Hotspot styling */
+#hotspot circle,
+#hotspot_2 ellipse,
+#hotspot_4 circle {
+  fill: rgba(0, 167, 157, 0);
+  transition: fill 0.3s ease, stroke 0.3s ease;
+  cursor: pointer;
+}
+
+#hotspot circle.active,
+#hotspot_2 ellipse.active,
+#hotspot_4 circle.active {
+  fill: rgba(255, 235, 59, 0.5);
+  stroke: #ff4b00;
+  stroke-width: 3;
+  animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.6;
+  }
 }
